@@ -58,6 +58,17 @@ namespace PlanYourHeist
             {
                 Console.WriteLine("You are going to prison!");
             }
+
+            var random = new Random();
+
+            var luckValue = random.Next(-10, 10);
+            Console.WriteLine($"Your luck value is {luckValue}");
+
+            var bankDifficultyLevelWithLuck = bankDifficultyLevel.BankDifficulty + luckValue;
+
+            //Before displaying the success or failure message, display a report that shows.
+            //The team's combined skill level
+            //The bank's difficulty level
         }
     }
 }
